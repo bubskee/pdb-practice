@@ -1,0 +1,27 @@
+{
+  "id": "relay",
+  "number": "02",
+  "title": "Log Relay",
+  "summary": "Repair a streaming log processor. Bytes arrive in chunks; consumers expect complete, ordered records.",
+  "target": "90 min target",
+  "duration": 90,
+  "source": "log_relay.py",
+  "readonly": [
+    "tests/relayTests.py",
+    "tests/__init__.py",
+    "main.sh"
+  ],
+  "files": [
+    "log_relay.py",
+    "tests/basicTests.py",
+    "tests/relayTests.py",
+    "tests/__init__.py",
+    "main.sh"
+  ],
+  "baseline": {
+    "passed": 11,
+    "failed": 8,
+    "errors": 5,
+    "total": 24
+  }
+}

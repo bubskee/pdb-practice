@@ -1,0 +1,27 @@
+{
+  "id": "dispatch",
+  "number": "01",
+  "title": "Dispatch Queue",
+  "summary": "Repair a stateful queue with ordering, retries, cancellation, and snapshots.",
+  "target": "75 min target",
+  "duration": 75,
+  "source": "dispatch_queue.py",
+  "readonly": [
+    "tests/dispatchTests.py",
+    "tests/__init__.py",
+    "main.sh"
+  ],
+  "files": [
+    "dispatch_queue.py",
+    "tests/basicTests.py",
+    "tests/dispatchTests.py",
+    "tests/__init__.py",
+    "main.sh"
+  ],
+  "baseline": {
+    "passed": 10,
+    "failed": 6,
+    "errors": 0,
+    "total": 16
+  }
+}
